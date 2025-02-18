@@ -12,7 +12,7 @@ extension URL {
     }
 
     static func spansEndpoint(basePath: String) -> URL? {
-        return endpoint(basePath: basePath, apiPath: "/v1/spans")
+        return endpoint(basePath: basePath, apiPath: "/v1/traces")
     }
 
     static func logsEndpoint(basePath: String) -> URL? {
