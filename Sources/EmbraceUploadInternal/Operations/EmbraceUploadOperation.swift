@@ -195,8 +195,8 @@ class EmbraceUploadOperation: AsyncOperation {
         request.setValue(metadataOptions.apiKey, forHTTPHeaderField: "X-EM-AID")
         request.setValue(metadataOptions.deviceId, forHTTPHeaderField: "X-EM-DID")
         request.setValue("e4JwlNAhOkoKUekqhJXtcL", forHTTPHeaderField: "x-honeycomb-team")
-        request.setValue("x-honeycomb-dataset", forHTTPHeaderField: "ctd-test")
-
+        request.setValue("metrics-1", forHTTPHeaderField: "x-honeycomb-dataset")
+        
         return request
     }
 

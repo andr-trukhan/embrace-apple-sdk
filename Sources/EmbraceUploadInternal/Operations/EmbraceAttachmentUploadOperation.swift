@@ -23,7 +23,7 @@ class EmbraceAttachmentUploadOperation: EmbraceUploadOperation {
         request.setValue(metadataOptions.deviceId, forHTTPHeaderField: "X-EM-DID")
         
         request.setValue("e4JwlNAhOkoKUekqhJXtcL", forHTTPHeaderField: "x-honeycomb-team")
-        request.setValue("x-honeycomb-dataset", forHTTPHeaderField: "ctd-test")
+        request.setValue("metrics-1", forHTTPHeaderField: "x-honeycomb-dataset")
 
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
